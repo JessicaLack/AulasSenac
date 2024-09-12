@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" href="../imagens/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="../CSS/style.css">
+    <link type="text/css" rel="stylesheet" href="../CSS/styleContato.css">
+</head>
+<body>
+    <div id="conteiner">
+        <section id="logo">
+            <img src="../IMAGENS/logo.png" class="tamanhoLogo">
+        </section>
+
+        <header id="topo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">IMPERIAL</a></li>
+                    <li><a href="cardapio.html">CARDÁPIO</a></li>
+                    <li><a href="contato.html" style="background-color:#805417; border-radius: 0px 10px 0px 10px;">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- FORMULÁRIO -->
+     <div id="conteudo_formulário"> <!--div é caixa do formulário, poderia também ser section -->
+        <form method="post" id="fContato" action="mailto:jessica.slbrito@senacsp.edu.br">
+            <!-- método post para guardar as informações;
+            id para chamar no css e formatar;
+            action para qual e-mail irão os dados;
+            o method GET para pesquisas. Ele não guarda o conteúdo. -->
+                    <label for="cNome">NOME</label>
+                    <input type="text" name="tNome" id="cNome" size="20" maxlength="20" autofocus required>
+                    <!-- maxlength - quantidade de caracteres que irá aceitar;
+                    size - tamanho da caixa de texto;
+                    placeholder - dica para o usuário de qual será o conteúdo da caixa;
+                    autofocus - cursor ficará piscando dentro da caixa;
+                    required - o campo ficará obrigatório;
+                    input é a caixa que o usuário vai digitar e type é o tipo de conteúdo que ele digitará. -->
+                </p>
+                <p>
+                    <label for="cEnd">ENDEREÇO</label>
+                    <input type="text" name="tEnd" id="cEnd" size="20" maxlength="25" required />
+                </p>
+                <p>
+                    <label for="cCid">CIDADE</label>
+                    <input type="text" name="tCid" id="cCid" size="20" maxlength="20" required />
+                </p>
+                <p>
+                    <label for="cTel">TELEFONE</label>
+                    <input type="tel" name="tTel" id="cTel" size="11" maxlength="14" placeholder="Ex:(99)99999-9999" required />
+                </p>
+                <p>
+                    <label for="cEmail">E-MAIL</label>
+                    <input type="email" name="tEmail" id="cEmail" size="30" maxlength="30" placeholder="Ex:exemplo@mail.com" required />
+                </p>
+                <!-- Botões -->
+                <input type="submit" name="ENVIAR" id="btn" />
+                <input type="reset" name="LIMPAR" id="btn" />
+
+        </form>
+
+    </div>
+
+        <!-- RODAPÉ -->
+        <footer id="rodape">
+            <p class="textoRodape">TODOS OS DIREITOS RESERVADOS | 2024</p>
+        </footer>
+    </div>
+</body>
+</html>

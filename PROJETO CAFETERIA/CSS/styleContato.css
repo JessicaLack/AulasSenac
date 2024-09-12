@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+#topo {
+    margin-bottom: 3%;
+}
+
+#conteudo_formulário{
+     margin: auto; /*centralizar o conteúdo da div formulário */
+     width: 50%;
+     font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     margin-bottom: 5%;
+}
+
+ input, textarea{ /*fundo da caixa de preenchimento de dados */
+    font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    font-size: 1.2em; /*fonte responsiva */
+    background-color: #fff;
+    border-color: #412b23;
+    padding: 5px;
+    border-radius: 6px;
+    border-style: solid;
+    width: 50%;
+    
+}
+
+label{
+    font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #412b23;
+    font-size: 1.4em;
+    margin-right:10%;
+}
+
+input:hover, textarea:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+#btn{
+    font-family:'Century Gothic', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.3em; /*fonte responsiva */
+    background-color: #412b23;
+    border-color: #412b23;
+    padding: 5px;
+    border-radius: 6px;
+    border-style: solid;
+    margin-right: 5%;
+    width: 34%;
+}
+
+#cNome{
+    margin-left: 15px;
+}
+
+#cEnd{
+    margin-left: -36px;
+}
+
+#cTel{
+    margin-left: -16px;
+}
+
+#cEmail{
+    margin-left: 14px;
+}

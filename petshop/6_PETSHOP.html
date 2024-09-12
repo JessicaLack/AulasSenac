@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--propriedade que controla o nível de amplificação quando a página é carregada pela primeira vez. Esse valor é usado para que o site web se enquadre proporcionalmente nas telas de celulares, pois sem esse valor, o site no celular fica com os elementos minúsculos, impedindo o usuário ter uma boa navegação. Assim, uma página web em que foi definida a meta tag como initial-scale=1, irá ser renderizada o mais próximo do tamanho físico possível dos celulares.-->
+	<meta name="description" content="site de acessórios para cães"/>
+	<meta name="keywords" content="cães, ração, shampoo, comida, remédios, pulgas"/>
+
+	<title> PETSHOP </title>
+
+	<!-- VAMOR VER FAVICON -->
+
+	<link rel="icon" href="favicon.ico">
+	<!-- icone que aparece no topo da página -->
+
+	<!-- css - cascading style sheet
+	estilos em cascata
+	vamos criar uma formatação DENTRO do html
+	css interno -->
+
+
+	<style>
+		body{ background-color: rgb(234, 245, 241);
+
+		}
+		img {
+			width: 100%; /*largura da imagem*/
+			 height: 100%; /*altura da imagem */
+		}
+		h1{
+			font-family:Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 30px;
+			color:chocolate;
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+			color: rgb(94, 47, 47);
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		hr{
+			width: 80%;
+		}
+		#p1{ /*para formatar o id de uma tag utiliza-se "#" */
+			text-align: justify;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 15px;
+		}
+		#p2{
+			color:rgb(73, 73, 73);
+			text-align: justify;
+			font-family:monospace;
+			font-size: 15px;
+		}
+		.destaque{ /*para formatar uma classe utiliza-se "." */
+			color: rgb(255, 20, 20);
+			font-style: italic;
+			font-size: 20px;
+		}
+		li{
+			text-align: center;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-size: 15px;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+
+	<a href="index.html">HOME |</a>
+	
+	
+	PRODUTOS | BANHO E TOSA
+
+ <!-- vamos colocar um banner aqui -->
+<img src="banner.png" alt="banner" title="banner loja de pet shop - 15% off em todo site com o cupom EBIT15">
+ <!-- coloque título e subtitulo -->
+
+	<h1>CUIDE DO SEU PETSHOP</h1>
+	<h2>Shampoo anti pulgas</h2>
+
+<!-- vamos colocar uma linha de separação aqui -->
+<hr>
+	<!-- aqui é um paragrafo -->
+	<p id="p1">Lorem ipsum dolor sit amet. Eos dignissimos explicabo eum tempora optio et quam aspernatur.
+	Ea corporis atque a voluptas neque et ullam error non quis rerum.
+	Eum dolor cumque et <span class="destaque">velit modi </span>ea ratione laboriosam hic suscipit
+	numquam ut perspiciatis mollitia. Non enim enim sit debitis optio
+	sed porro minima nam enim obcaecati ab molestias ipsam! Nam quas
+	illum vel reprehenderit consequatur ut sunt provident est quod autem ut ipsum numquam.</p>
+
+	<p id="p2">Lorem ipsum dolor sit amet. Eos dignissimos explicabo eum tempora optio et quam aspernatur.
+		Ea corporis atque a voluptas neque et ullam error non quis rerum.
+		Eum dolor cumque et velit modi ea ratione laboriosam hic suscipit
+		numquam ut perspiciatis mollitia. Non enim enim sit debitis optio
+		sed porro minima nam enim obcaecati ab molestias ipsam! Nam quas
+		illum vel reprehenderit consequatur ut sunt provident est quod autem ut ipsum numquam.</p>
+
+
+<!-- aqui são itens( produto e descrição) -->
+<ul>
+	<li>Sabonete   	-	sabonete calmante para seu cão dormir bem</li>
+	<li>Brinquedos 	-	bolinha colorida pula pula</li>
+	<li>Shampoo    	-	shampoo antipugas com cheiro de jasmim</li>
+	<li>Petiscos   	-	petiscos em formato de estrela para peixes</li>
+</ul>
+</body>
+</html>
