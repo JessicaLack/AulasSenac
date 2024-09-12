@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+
+<style>
+
+.wrapper{ /* CAIXA PRINCIPAL que receberá as outras internas */
+    display: flex; /*para transformar em blocos*/
+    flex-direction: row; /* linha mas também pode ser columns */
+    flex-wrap: wrap; /*quando crio caixas elas ficam uma do lado da outra o flex-wrap:wrap dará a quebra quando totalizar 100% */
+    justify-content:center; /*alinhando os blocos na horizontal dentro do principal */
+    align-items: center; /*alinhando os blocos na vertical */
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+.boxTopo{
+    background-color: blue;
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 1%;
+}
+
+.boxBanner{
+    background-color: blueviolet;
+    width: 100%;
+    height: auto;
+     margin: 0px; 
+}
+
+.boxDireita{
+    background-color: red;
+    width: 48%;
+    height: auto;
+    margin: 10px; /*margem ao redor das caixas para ficarem distante */
+}
+
+.boxEsquerda{
+    background-color:rgb(0, 160, 80);
+    width: 48%;
+     height: auto; /*após visualizar como iria ficar com px, colocamos "auto" porque a caixa irá crescer junto com  conteúdo adicionado */
+    margin: 10px;
+}
+
+.boxRodape{
+    background-color:purple;
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    padding-top: 1.5%;
+}
+
+.tamanhoBanner{
+    width: 100%;
+    height: auto;
+}
+
+.tamanhoLateral{
+    width: 100%;
+    height: auto;
+}
+
+
+</style>
+
+</head>
+<body>
+
+     <div class="wrapper"> <!-- caixa principal que irá receber os filhos -->
+
+        <div class="boxTopo">
+            home | portfólio | Fale conosco
+        </div>
+
+        <div class="boxBanner">
+            <img src="banner.jpg" class="tamanhoBanner">
+        </div>
+
+        <div class="boxDireita">
+            <img src="direita.jpg" class="tamanhoLateral">
+        </div>
+
+        <div class="boxEsquerda">
+            <img src="esquerda.jpg" class="tamanhoLateral">
+        </div>
+
+        <div class="boxRodape">
+            Todos os direitos reservados | 2024
+        </div>
+
+    </div>
+    
+</body>
+</html>
